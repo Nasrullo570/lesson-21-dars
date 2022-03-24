@@ -90,7 +90,7 @@ header .menu ul li a:hover::after {
 header .menu ul li a::after {
   content: "";
   position: absolute;
-  bottom: -4px;
+  bottom: -10px;
   left: 0;
   background: #2bff00;
   height: 5px;
@@ -301,7 +301,7 @@ header .other {
 }
 
 .info .left .tal0 {
-  margin-top: 80px !important;
+  margin-top: 20px !important;
   background: #fff;
 }
 
@@ -309,6 +309,10 @@ header .other {
   border-radius: 4px;
   margin-top: 20px;
   background: #fff;
+}
+
+.info .left .tal h1 span {
+  color: #000;
 }
 
 .info .left .tal .abo .about {
@@ -340,16 +344,17 @@ header .other {
   padding: 0 24px;
 }
 
-.info .left .tal .abo .tax p:first-child {
-  color: black;
+.info .left .tal .abo .tax .ttt {
+  margin: 18px 0;
 }
 
-.info .left .tal .abo .tax p:nth-child(2) {
-  color: #acacac;
-}
-
-.info .left .tal .abo .tax p:nth-child(3) {
-  color: #f0eeee;
+.info .left .tal .abo .tax p {
+  background: -webkit-gradient(linear, left top, left bottom, from(#181818), to(rgba(24, 24, 24, 0)));
+  background: linear-gradient(180deg, #181818 0%, rgba(24, 24, 24, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .info .left .tal .abo .tax h3 {
@@ -359,6 +364,60 @@ header .other {
   line-height: 11px;
   text-transform: uppercase;
   color: #0275B1;
+}
+
+.info .left .tal .abo .tax h4 {
+  margin: 20px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.info .left .tal .abo .tax img {
+  margin-bottom: 14px;
+}
+
+.info .left .tal .abo .tax .ux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 790px;
+  height: 80px;
+  background: #E9F0F8;
+  border-radius: 4px;
+  padding: 19px;
+  margin-bottom: 29px;
+}
+
+.info .left .tal .abo .tax .ux .file {
+  width: 42px;
+  height: 42px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0077B5), to(#0E6795));
+  background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+  border-radius: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info .left .tal .abo .tax .ux .texis {
+  padding: 10px;
+}
+
+.info .left .tal .abo .tax .ux .texis h5 {
+  margin-bottom: 10px;
+}
+
+.info .left .tal .abo .tax .ux .texis span {
+  font-size: 10px;
 }
 
 .info .left .tal .abo .past {
@@ -403,19 +462,26 @@ header .other {
   background: #fff;
 }
 
-.info .right .rasm {
+.info .right .rasm .foto1 {
   position: relative;
+  height: 190px;
 }
 
-.info .right .rasm .foto2 {
+.info .right .rasm .foto1 img {
+  width: 100%;
+}
+
+.info .right .rasm .foto1 .foto2 {
   position: absolute;
-  top: 70px;
-  right: 90px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .info .right .rasm .t-rasm {
-  margin-top: 65px;
   text-align: center;
+  width: 240px;
+  margin: 0 auto;
 }
 
 .info .right .rasm .t-rasm h1 {
@@ -425,7 +491,129 @@ header .other {
 
 .info .right .rasm .t-rasm span {
   font-size: 10px;
-  line-height: 150%;
+}
+
+.info .right .buttun {
+  margin-top: 40px;
+  background-color: white;
+  border-radius: 4px;
+  width: 290px;
+  height: 80px;
   text-align: center;
+}
+
+.info .right .buttun button {
+  width: 230px;
+  height: 32px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0077B5), to(#0E6795));
+  background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+  border-radius: 4px;
+  color: #fff;
+  border: 0;
+  margin: 25px 30px;
+}
+
+.info .right .list {
+  padding: 14px;
+  margin-top: 20px;
+  background: #FCFDFD;
+  border-radius: 4px;
+}
+
+.info .right .list .my {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.info .right .list .my h5 {
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 11px;
+  text-transform: uppercase;
+}
+
+.info .right .list .my span {
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 11px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #0275B1;
+}
+
+.info .right .list .moscow {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 231px;
+  height: 80px;
+  background: #FFFFFF;
+  border: 1px solid #F4F4F4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.info .right .list .moscow .immg {
+  margin-right: 15px;
+}
+
+.info .right .list .moscow .ttex {
+  font-size: 14px;
+  line-height: 125%;
+}
+
+.info .right .list .rod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.info .right .list .rod span {
+  padding: 7px 12px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: #E9F0F8;
+  border-radius: 4px;
+}
+
+.info .right .list .moscoww {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+}
+
+.info .right .list .moscoww .immmg {
+  margin-right: 10px;
+}
+
+.info .right .list .moscoww h4 {
+  font-size: 14px;
+  line-height: 125%;
+}
+
+.info .right .list .moscoww span {
+  font-size: 10px;
+  line-height: 150%;
+}
+
+.footer {
+  width: 100%;
+  height: 3335px;
+  background-color: #000;
 }
 /*# sourceMappingURL=style.css.map */

@@ -73,7 +73,7 @@ header {
                     &::after {
                         content: "";
                         position: absolute;
-                        bottom: -4px;
+                        bottom: -10px;
                         left: 0;
                         background: #2bff00;
                         height: 5px;
@@ -275,16 +275,14 @@ header {
                         border-radius: 4px;
                         display: flex;
                         align-items: center;
-
                     }
                 }
 
             }
         }
 
-
         .tal0 {
-            margin-top: 80px !important;
+            margin-top: 20px !important;
             background: #fff;
         }
 
@@ -293,8 +291,13 @@ header {
             margin-top: 20px;
             background: #fff;
 
-            .abo {
+            h1 {
+                span {
+                    color: #000;
+                }
+            }
 
+            .abo {
                 .about {
                     padding: 10px 24px;
                     display: flex;
@@ -319,18 +322,16 @@ header {
                 .tax {
                     padding: 0 24px;
 
+                    .ttt {
+                        margin: 18px 0;
+                    }
+
                     p {
-                        &:first-child {
-                            color: black;
-                        }
-
-                        &:nth-child(2) {
-                            color: rgb(172, 172, 172);
-                        }
-
-                        &:nth-child(3) {
-                            color: #f0eeee;
-                        }
+                        background: linear-gradient(180deg, #181818 0%, rgba(24, 24, 24, 0) 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
 
 
 
@@ -344,7 +345,54 @@ header {
                         text-transform: uppercase;
                         color: #0275B1;
                     }
+
+                    h4 {
+                        margin: 20px 0;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+
+                    img {
+                        margin-bottom: 14px;
+                    }
+
+                    .ux {
+                        display: flex;
+                        align-items: center;
+                        width: 790px;
+                        height: 80px;
+                        background: #E9F0F8;
+                        border-radius: 4px;
+                        padding: 19px;
+                        margin-bottom: 29px;
+
+                        .file {
+                            width: 42px;
+                            height: 42px;
+                            background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+                            border-radius: 26px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        .texis {
+                            padding: 10px;
+
+                            h5 {
+                                margin-bottom: 10px;
+                            }
+
+                            span {
+                                font-size: 10px;
+                            }
+
+                        }
+                    }
+
+
                 }
+
 
                 .past {
                     padding: 0 24px;
@@ -352,28 +400,27 @@ header {
                     padding-bottom: 20px;
                     border: 1px solid #f4f4f4;
 
-
                     span {
                         padding: 22px 0;
                         padding-right: 20px;
-                        p{
+
+                        p {
                             display: inline-block;
                             padding-left: 8px;
                         }
-                        
-                        
                     }
-                    .u1{
+
+                    .u1 {
                         border-left: 1px solid #f4f4f4;
                         border-right: 1px solid #f4f4f4;
-                      padding-left: 30px;
-                  }
-                    .u{
-                        border-left: 1px solid #f4f4f4;
-                      padding-left: 30px;
-                  }
-                }
+                        padding-left: 30px;
+                    }
 
+                    .u {
+                        border-left: 1px solid #f4f4f4;
+                        padding-left: 30px;
+                    }
+                }
             }
 
             h1 {
@@ -383,8 +430,6 @@ header {
                 color: #0275B1;
                 border-bottom: 1px solid #f4f4f4;
             }
-
-
         }
     }
 
@@ -394,19 +439,26 @@ header {
         background: #fff;
 
         .rasm {
-            position: relative;
+            .foto1 {
+                position: relative;
+                height: 190px;
 
+                img {
+                    width: 100%;
 
-            .foto2 {
-                position: absolute;
-                top: 70px;
-                right: 90px;
+                }
 
+                .foto2 {
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
             }
 
             .t-rasm {
-                margin-top: 65px;
                 text-align: center;
+                width: 240px;
+                margin: 0 auto;
 
                 h1 {
                     font-size: 14px;
@@ -415,13 +467,134 @@ header {
 
                 span {
                     font-size: 10px;
-                    line-height: 150%;
-                    text-align: center;
                 }
             }
         }
+
+
+
+        .buttun {
+            margin-top: 40px;
+            background-color: white;
+            border-radius: 4px;
+            width: 290px;
+            height: 80px;
+
+            text-align: center;
+
+            button {
+                width: 230px;
+                height: 32px;
+                background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+                border-radius: 4px;
+                color: #fff;
+                border: 0;
+                margin: 25px 30px;
+            }
+        }
+
+        .list {
+            padding: 14px;
+            margin-top: 20px;
+            background: #FCFDFD;
+            border-radius: 4px;
+
+            .my {
+                margin-bottom: 20px;
+                border-bottom: 1px solid #f4f4f4;
+
+                h5 {
+                    margin-bottom: 20px;
+                    font-size: 12px;
+                    line-height: 11px;
+                    text-transform: uppercase;
+                }
+
+                span {
+                    margin-bottom: 20px;
+                    font-size: 12px;
+                    line-height: 11px;
+                    text-align: right;
+                    text-transform: uppercase;
+                    color: #0275B1;
+
+                }
+
+            }
+
+            .moscow {
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                width: 231px;
+                height: 80px;
+                background: #FFFFFF;
+                border: 1px solid #F4F4F4;
+                box-sizing: border-box;
+                padding: 15px;
+                border-radius: 6px;
+
+                .immg {
+                    margin-right: 15px;
+
+                }
+
+                .ttex {
+                    font-size: 14px;
+                    line-height: 125%;
+                }
+            }
+
+            .rod {
+                display: flex;
+                flex-wrap: wrap;
+
+                span {
+                    padding: 7px 12px;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    background: #E9F0F8;
+                    border-radius: 4px;
+
+                }
+            }
+
+            .moscoww {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+
+                .immmg {
+                    margin-right: 10px;
+
+                }
+
+
+                h4 {
+                    font-size: 14px;
+                    line-height: 125%;
+                }
+
+                span {
+                    font-size: 10px;
+                    line-height: 150%;
+                }
+            }
+
+
+        }
+
+
+
     }
+}
 
 
+
+.footer{
+    width: 100%;
+    height: 3335px;
+    background-color: #000;
 
 }
